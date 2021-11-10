@@ -68,6 +68,14 @@ cat1.products.create!({
 })
 
 cat1.products.create!({
+  name:  'cool shirt',
+  description: Faker::Hipster.paragraph(4),
+  image: open_asset('ra.jpg'),
+  quantity: 0,
+  price: 66.75
+})
+
+cat1.products.create!({
   name:  'Russian Spy Shoes',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel5.jpg'),
