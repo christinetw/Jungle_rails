@@ -82,7 +82,13 @@ cat1.products.create!({
   quantity: 82,
   price: 224.50
 })
-
+cat1.products.create!({
+  name:  'cool shirt',
+  description: Faker::Hipster.paragraph(4),
+  image: open_asset('ra.jpg'),
+  quantity: 0,
+  price: 77.50
+})
 
 cat2.products.create!({
   name:  'Modern Skateboards',
