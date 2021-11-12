@@ -8,7 +8,6 @@ class CartsController < ApplicationController
     modify_cart_delta(product_id, +1)
    
     redirect_to :back
-
     
   end
 
